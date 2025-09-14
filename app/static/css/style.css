@@ -1,0 +1,375 @@
+/* app/static/css/style.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+.main {
+    padding: 1rem 2rem;
+    background-color: #f8fafc;
+}
+
+.stApp {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Hide Streamlit Elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Hero Header - Clean Blue Gradient */
+.hero-header {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.95;
+    margin-bottom: 0;
+    letter-spacing: 0.01em;
+}
+
+/* Clean Card Design */
+.metric-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #3b82f6;
+}
+
+.metric-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Feature Cards with Icons */
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1rem auto;
+    color: white;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.feature-description {
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Product Cards */
+.product-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-color: #3b82f6;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+}
+
+.product-brand {
+    color: #3b82f6;
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #059669;
+    margin-bottom: 0.5rem;
+}
+
+/* Analysis Results */
+.analysis-result {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 4px solid #3b82f6;
+    margin: 1.5rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #e2e8f0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.analysis-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+/* Clean Buttons */
+.stButton > button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    box-shadow: none;
+    border: 1px solid #3b82f6;
+}
+
+.stButton > button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* Secondary Button Style */
+.stButton > button[kind="secondary"] {
+    background: white;
+    color: #3b82f6;
+    border: 1px solid #3b82f6;
+}
+
+.stButton > button[kind="secondary"]:hover {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background: white;
+    border-right: 1px solid #e2e8f0;
+}
+
+.sidebar-content {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+/* Upload Area */
+.upload-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: white;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.upload-area:hover {
+    border-color: #3b82f6;
+    background: #f8faff;
+}
+
+.upload-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.upload-subtitle {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+/* Progress Bar Custom */
+.stProgress > div > div > div {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+/* Success Messages */
+.success-message {
+    background: #f0fdf4;
+    color: #166534;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #bbf7d0;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+/* Warning Messages */
+.warning-message {
+    background: #fffbeb;
+    color: #92400e;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #fde68a;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+/* Info Messages */
+.info-message {
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #bfdbfe;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Rating Stars */
+.rating-stars {
+    color: #fbbf24;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Match Score Badge */
+.match-score {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+/* Navigation Active State */
+.css-1544g2n.e1fqkh3o4 {
+    background-color: #eff6ff !important;
+    border-radius: 8px;
+}
+
+/* Clean Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #1e293b;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .main {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Remove Streamlit padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
